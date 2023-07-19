@@ -25,7 +25,8 @@ class ProjectSeeder extends Seeder
             $newProject->title = $faker->text(50);
             $newProject->content = $faker->text();
             
-            $newProject->image = $faker->image(Storage::path('uploads'), 600, 400);
+            $newProject->image = "placeholders/placeholder.webp";
+            //$newProject->image = $faker->image(Storage::path('uploads'), 600, 400)
             
             //$newProject->type_id = $faker->numberBetween(0, 5);
             $newProject->type_id = $allTypes->random()->id;
