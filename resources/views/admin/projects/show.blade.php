@@ -14,7 +14,7 @@
         
     </h6>
     <div class="w-50 my-2">
-        <img src="{{ ($project['image']) ? asset('storage/' . $project->image) : "https://www.signfix.com.au/wp-content/uploads/2017/09/placeholder-600x400.png" }}" class="card-img-top" alt="{{ $project->title }}">
+        <img src="{{ asset("storage/" . $project->image) }}" class="card-img-top" alt="{{ $project->title }}">
     </div>
     <p>{{ $project->content }}</p>
 
